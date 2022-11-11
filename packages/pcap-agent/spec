@@ -1,0 +1,9 @@
+---
+name: pcap-agent
+
+dependencies:
+  - golang-1-linux
+
+files:
+- pcap-agent/**/*
+- libpcap/libpcap-1.10.1.tgz

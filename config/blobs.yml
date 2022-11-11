@@ -2,6 +2,10 @@ jq/jq-1.6-linux64.tgz:
   size: 1710406
   object_id: 903cbcb6-fc74-4434-4efc-e8ab36ea03bd
   sha: df0513a1ed80d8522d4a04dd03817e11de03d56e
+libpcap/libpcap-1.10.1.tgz:
+  size: 935221
+  object_id: 04913adc-9d74-490e-6ac4-142bd4912117
+  sha: sha256:ed285f4accaf05344f90975757b3dbfe772ba41d1c401c2648b7fa45b711bdd4
 proxy/envoy-a2a1e3eed4214a38608ec223859fcfa8fb679b14-1.19.1.tgz:
   size: 21196662
   object_id: 6823b0f6-f289-4533-7fa1-b5e476d1bbf9

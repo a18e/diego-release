@@ -32,6 +32,7 @@ packages:
   - healthcheck
   - proxy
   - certsplitter
+  - pcap-agent
 
 properties:
   bpm.enabled:

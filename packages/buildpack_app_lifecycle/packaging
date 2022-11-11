@@ -29,10 +29,10 @@ cp /var/vcap/packages/diego-sshd/*.exe ${DEST}
 cp /var/vcap/packages/diego-sshd/winpty.dll ${DEST}/winpty.dll
 cp /var/vcap/packages/healthcheck/healthcheck ${DEST}/healthcheck
 cp /var/vcap/packages/healthcheck/healthcheck.exe ${DEST}/healthcheck.exe
+cp /var/vcap/packages/pcap-agent/pcap-agent ${DEST}/pcap-agent
 
 tar -czf ${BOSH_INSTALL_TARGET}/buildpack_app_lifecycle.tgz \
   -C ${DEST} \
-  builder launcher shell healthcheck diego-sshd  \
+  builder launcher shell healthcheck diego-sshd pcap-agent \
   builder.exe launcher.exe getenv.exe healthcheck.exe diego-sshd.exe \
   winpty-agent.exe winpty.dll
-

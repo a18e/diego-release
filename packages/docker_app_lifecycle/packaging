@@ -20,5 +20,6 @@ ldd ${DEST}/launcher && echo "launcher must be statically linked" && false
 
 cp /var/vcap/packages/diego-sshd/diego-sshd ${DEST}/diego-sshd
 cp /var/vcap/packages/healthcheck/healthcheck ${DEST}/healthcheck
+cp /var/vcap/packages/pcap-agent/pcap-agent ${DEST}/pcap-agent
 
-tar -czf ${BOSH_INSTALL_TARGET}/docker_app_lifecycle.tgz -C ${DEST} builder launcher healthcheck diego-sshd
+tar -czf ${BOSH_INSTALL_TARGET}/docker_app_lifecycle.tgz -C ${DEST} builder launcher healthcheck diego-sshd pcap-agent
